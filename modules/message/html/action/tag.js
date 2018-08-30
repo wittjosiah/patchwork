@@ -13,7 +13,11 @@ exports.create = (api) => {
   return nest('message.html.action', msg => {
     return h('a.tag', {
       href: '#',
-      'ev-click': () => api.sheet.editTags({ msgId: msg.key }, console.log)
+      'ev-click': (ev) => api.sheet.editTags({ msgId: msg.key }, (err, tags) => {
+        console.log(err, tags)
+        ev.target.classList.add('alert')
+        setTimeout(() => ev.target.classList.remove('alert'), 500)
+      })
     }, i18n('Tag'))
   })
 }

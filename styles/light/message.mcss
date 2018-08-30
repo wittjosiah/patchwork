@@ -329,6 +329,9 @@ Message {
           background: #2F92D7
         }
       }
+      a.alert {
+        box-shadow: 0 0 2px 2px #2F92D7
+      }
       a {
         font-size: 13px
         background: #f3f3f3;
@@ -337,7 +340,7 @@ Message {
         color: #656565;
         display: inline-block
         text-align: center
-        transition: background-color 0.25s ease, color 0.25s ease
+        transition: background-color 0.25s ease, color 0.25s ease, box-shadow 0.5s ease
 
         :before {
           content: "↩ "

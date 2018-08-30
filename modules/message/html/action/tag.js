@@ -15,8 +15,8 @@ exports.create = (api) => {
       href: '#',
       'ev-click': (ev) => api.sheet.editTags({ msgId: msg.key }, (err, tags) => {
         console.log(err, tags)
-        ev.target.classList.add('alert')
-        setTimeout(() => ev.target.classList.remove('alert'), 500)
+        ev.target.classList.add(err ? 'alert' : 'success')
+        setTimeout(() => ev.target.classList.remove(err ? 'alert' : 'success'), 500)
       })
     }, i18n('Tag'))
   })

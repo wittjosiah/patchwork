@@ -330,7 +330,10 @@ Message {
         }
       }
       a.alert {
-        box-shadow: 0 0 2px 2px #2F92D7
+        box-shadow: 0 0 2px 2px #A91818
+      }
+      a.success {
+        box-shadow: 0 0 2px 2px #7dbd85
       }
       a {
         font-size: 13px

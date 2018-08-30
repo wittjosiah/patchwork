@@ -321,6 +321,14 @@ Message {
           background: #959EAB
         }
       }
+      a.tag {
+        :before {
+          content: "🏷 "
+        }
+        :hover {
+          background: #2F92D7
+        }
+      }
       a {
         font-size: 13px
         background: #f3f3f3;
